@@ -19,8 +19,6 @@ const About = () => {
                 className={`fs-3 ${!darkMode ? "text-black-50" : "text-light"}`}
               >
                 Hi there! I'm <span className="fw-bolder fs-2">Osama</span>. I'm
-                Front-End developer , i create and maintain a better code base
-                for reusability , Capable of continuous learning from senior
                 developers .
               </p>
               <h2
