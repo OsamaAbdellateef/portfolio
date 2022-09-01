@@ -1,0 +1,84 @@
+.intro-section {
+  font-size: 2.5rem;
+  display: flex;
+  /* height: 80vh; */
+  align-items: center;
+  margin-top: 10vh;
+}
+
+/* left side */
+.intro-left {
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+  position: relative;
+  flex: 1;
+}
+
+.intro-name {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.intro-name > span {
+  font-family: "Raleway";
+}
+
+.intro-name > :nth-child(1),
+.intro-name > :nth-child(2) {
+  font-weight: bolder;
+  font-size: 6rem;
+}
+
+.intro-name > :nth-child(1) {
+  font-family: "Old Standard TT";
+  font-weight: bolder;
+  font-style: italic;
+  color: var(--black);
+  font-size: 5rem;
+}
+
+.intro-name > :nth-child(2) {
+  color: var(--orange);
+}
+
+.intro-name > :nth-child(3) {
+  font-weight: 100;
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(133, 133, 133);
+}
+
+.intro-btn {
+  width: 15rem;
+  height: 5rem;
+  font-size: 1.8rem !important;
+}
+
+.intro-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-right img.programmer {
+  width: 100%;
+  height: 100%;
+  /* height: 500px; */
+}
+
+.intro-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.intro-icons svg {
+  color: var(--orange);
+}
+
+.intro-icons > * {
+  cursor: pointer;
+}

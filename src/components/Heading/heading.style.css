@@ -1,0 +1,21 @@
+.custom-heading {
+  font-size: 4rem;
+  font-weight: 600;
+  position: relative;
+  color: var(--black);
+}
+
+.custom-heading .marker {
+  color: var(--orange);
+}
+
+.custom-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 10%;
+  border-radius: 10px;
+  height: 6px;
+  background-image: linear-gradient(to right, var(--orange), var(--yellow));
+}

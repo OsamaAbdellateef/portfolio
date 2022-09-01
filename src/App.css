@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+}
+:root {
+  --yellow: #f5c32c;
+  --orange: #ff745c;
+  --black: #242d49;
+  --dark: #212121;
+  --gray: #788097;
+  --blueCard: #ddf8fe;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --shadow-sm: 0 0 5px 1px rgb(224, 224, 224);
+  --shadow-md: 0 0 5px 3px rgb(224, 224, 224);
+  --trans-sm: all ease-in-out 0.2s;
+  --trans-md: all ease-in-out 0.4s;
+  --trans-lg: all ease-in-out 0.7s;
+
+  font-size: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* for dark and light theme */
+.App.dark .theme-light {
+  color: white !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* utilities */
+.shadow-sm {
+  box-shadow: 0 0 5px 1px rgb(224, 224, 224);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.shadow-md {
+  box-shadow: 0 0 5px 3px rgb(224, 224, 224);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.color-primary {
+  color: var(--orange);
+}
+
+.bgColor-primary {
+  background-color: var(--orange) !important;
+}
+
+.mlgtp {
+  margin-top: 7rem;
+}
+.mlgbtm {
+  margin-bottom: 7rem;
+}
+.button {
+  border-radius: 34px;
+  border: none;
   color: white;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  background-image: linear-gradient(180deg, #ff9197 26.71%, #eb3b5a 99.36%);
+  box-shadow: 0 20px 24px 3px rgba(231, 81, 146, 0.42);
+  transition: var(--trans-md);
+  cursor: pointer;
+  min-width: 12rem;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  background-image: linear-gradient(to right, white, white);
+  color: var(--orange);
+  border: 1px solid var(--orange);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App {
+  transition: var(--trans-sm);
+}
+
+.App.dark {
+  background-color: #212121;
 }

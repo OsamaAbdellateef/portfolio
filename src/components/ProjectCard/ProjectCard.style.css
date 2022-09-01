@@ -1,0 +1,43 @@
+.project-card {
+  box-shadow: 0 0 5px 1px rgb(224, 224, 224);
+  transition: var(--trans-sm);
+}
+
+.App.dark .project-card {
+  border: 1px solid rgb(65, 69, 76) !important;
+  box-shadow: none;
+}
+
+.project-card-overlay {
+  background-image: linear-gradient(to right, #ff745cce, #f5c32ccd);
+  transition: var(--trans-md);
+  transform: translateX(-100%);
+  cursor: pointer;
+}
+
+.project-card .img-container:hover .project-card-overlay {
+  transform: translateX(0);
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 5px 3px rgb(224, 224, 224);
+}
+
+.project-card .img-container {
+  overflow: hidden;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  height: 200px;
+  cursor: pointer;
+  transition: var(--trans-md);
+}
+
+.modal-close-icon {
+  right: 0;
+}

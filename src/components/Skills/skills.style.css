@@ -1,0 +1,13 @@
+.skills-section .CircularProgressbar .CircularProgressbar-path {
+  stroke: #f7b137 !important;
+}
+
+.App.dark .skills-section p {
+  color: white !important;
+}
+
+.skills-section .CircularProgressbar-text {
+  fill: var(--orange);
+  font-weight: 500;
+  font-style: italic;
+}
