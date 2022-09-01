@@ -21,7 +21,7 @@ const ProjectCard = ({
   const [show, setShow] = useState(false);
 
   return (
-    <motion.div
+    <div
       initial={{ x: -300 }}
       animate={{ x: 0 }}
       transition={{ duration: 5, delay: 3 }}
@@ -65,9 +65,9 @@ const ProjectCard = ({
               {tools?.map((t) => t + ", ")}
             </span>
           </p>
-          <p className="px-4">
+          <div className="px-4">
             <hr />
-          </p>
+          </div>
           <p className="fs-3">
             <span className="fw-bold d-flex align-items-center theme-light">
               <HiOutlineInformationCircle className="me-2" fontSize={25} />
@@ -97,7 +97,7 @@ const ProjectCard = ({
           </Modal.Body>
         </Modal>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

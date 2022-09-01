@@ -143,7 +143,7 @@ const About = () => {
                       Faculty of computers and information.
                     </span>
                     <br />
-                    <p className="theme-light d-flex flex-column flex-md-row ">
+                    <span className="theme-light d-flex flex-column flex-md-row ">
                       <span className="theme-light">
                         <span className="fw-bold">-Department: </span>
                         <span className="me-3">computer science </span>
@@ -152,7 +152,7 @@ const About = () => {
                         <span className="fw-bold">-Grade: </span>
                         <span>very good</span>
                       </span>
-                    </p>
+                    </span>
                   </p>
                 </li>
               </ul>

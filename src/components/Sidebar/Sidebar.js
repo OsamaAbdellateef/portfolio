@@ -24,11 +24,7 @@ const Sidebar = ({ expand, setExpand }) => {
         transition={{ delay: 1.8 }}
         className="list-unstyled text-center"
       >
-        <motion.li
-          whileHover={{ scale: 1.1, originX: 0, color: "#f8e112" }}
-          transition={{ type: "spring", stiffness: 300 }}
-          className="my-5"
-        >
+        <li className="my-5">
           <Link
             onClick={() => {
               setExpand(false);
@@ -43,12 +39,8 @@ const Sidebar = ({ expand, setExpand }) => {
           >
             Home
           </Link>
-        </motion.li>
-        <motion.li
-          whileHover={{ scale: 1.1, originX: 0, color: "#f8e112" }}
-          transition={{ type: "spring", stiffness: 300 }}
-          className="my-5"
-        >
+        </li>
+        <li className="my-5">
           <Link
             onClick={() => {
               setExpand(false);
@@ -62,12 +54,8 @@ const Sidebar = ({ expand, setExpand }) => {
           >
             About
           </Link>
-        </motion.li>
-        <motion.li
-          whileHover={{ scale: 1.1, originX: 0, color: "#f8e112" }}
-          transition={{ type: "spring", stiffness: 300 }}
-          className="my-5"
-        >
+        </li>
+        <li className="my-5">
           <Link
             onClick={() => {
               setExpand(false);
@@ -81,12 +69,8 @@ const Sidebar = ({ expand, setExpand }) => {
           >
             skills
           </Link>
-        </motion.li>
-        <motion.li
-          whileHover={{ scale: 1.1, originX: 0, color: "#f8e112" }}
-          transition={{ type: "spring", stiffness: 300 }}
-          className="my-5"
-        >
+        </li>
+        <li className="my-5">
           <Link
             onClick={() => {
               setExpand(false);
@@ -100,12 +84,8 @@ const Sidebar = ({ expand, setExpand }) => {
           >
             Projects
           </Link>
-        </motion.li>
-        <motion.li
-          whileHover={{ scale: 1.1, originX: 0, color: "#f8e112" }}
-          transition={{ type: "spring", stiffness: 300 }}
-          className="my-5"
-        >
+        </li>
+        <li className="my-5">
           <Link
             onClick={() => {
               setExpand(false);
@@ -119,7 +99,7 @@ const Sidebar = ({ expand, setExpand }) => {
           >
             contact
           </Link>
-        </motion.li>
+        </li>
       </motion.ul>
     </div>
   );

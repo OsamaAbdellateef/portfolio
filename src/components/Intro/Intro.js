@@ -1,4 +1,5 @@
 import "./intro.style.css";
+import CV from "../../Osama-Abdellatif-Front-End-CV.pdf";
 import Programmer from "../../img/programmer.png";
 import Blob from "../../img/s.png";
 import { useContext } from "react";
@@ -31,7 +32,7 @@ export default function Intro() {
           </div>
           <div className="btn-container text-center d-flex justify-content-center justify-content-lg-start">
             <a
-              href="../../Osama-Abdellatif-Front-End-CV.pdf"
+              href={CV}
               download
               className="intro-btn button text-decoration-none "
             >
