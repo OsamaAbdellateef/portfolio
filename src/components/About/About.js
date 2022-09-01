@@ -18,8 +18,10 @@ const About = () => {
               <p
                 className={`fs-3 ${!darkMode ? "text-black-50" : "text-light"}`}
               >
-                Hi there! I'm <span className="fw-bolder fs-2">Osama</span>. I'm
-                developers .
+                Hi there! I'm <span className="fw-bolder fs-2">Osama</span>, I'm
+                a web developer with a vast array of knowledge in front-end
+                development, I'm dedicated to perfecting my skills by learning
+                from more seasoned developers.
               </p>
               <h2
                 className={`mt-4 fw-bold ${

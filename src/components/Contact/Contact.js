@@ -20,7 +20,7 @@ const ContactInfo = () => (
       <div className="d-flex justify-content-center align-items-center my-4">
         <AiOutlineMail className="me-2" fontSize={25} color="#FF745C" />
         <span className="text-black-50 fs-1 theme-light">
-          osama.abdellatif.mahmoud@gmail.com
+          osama.abd9888@gmail.com
         </span>
       </div>
       <div className="d-flex justify-content-center align-items-center my-4">
